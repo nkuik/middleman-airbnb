@@ -22,8 +22,9 @@
       /   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       / <![endif]-->
 
-  %body{class:"= page_classes %>"}
+  %body
 
     = partial "navbar"
-    = yield
+    %main
+      = yield
     = partial "footer"
